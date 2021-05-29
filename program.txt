@@ -1,0 +1,19 @@
+label store
+push 1
+push 42
+store
+ret
+label load
+push 1
+load
+ret
+label main
+call store
+call load
+push 0
+jnil char
+putint
+halt
+label char
+putchar
+halt
